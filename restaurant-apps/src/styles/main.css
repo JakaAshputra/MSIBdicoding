@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Roboto, sans-serif";
+  font-size: 12px;
+  color: #424242;
+}
+
+a {
+  display: inline-block;
+  min-height: 44px;
+  min-width: 44px;
+}
+
+.skip-link {
+  position: absolute;
+  top:-50px;
+  left: 0;
+  padding: 8px;
+  background-color: #bf1722;
+  color: white;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+/*
+    Header
+*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  min-height: 56px;
+  transition: min-height 0.3s;
+  background-color: #212121;
+}
+
+.header__inner {
+  width: 100%;
+  text-align: left;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.header__title {
+  font-weight: 300;
+  font-size: 4em;
+  margin: 0.5em 0.25em;
+  display: inline-block;
+  color:#d6d6d6;
+  
+}
+
+.header__menu {
+  text-decoration: none;
+  font-size: 32px;
+  margin: 25px 15px;
+  display: block;
+  width: 30px;
+  color: #fff;
+}
+
+/*
+  Nav Bar
+*/
+
+.nav {
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav__list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav__item {
+  font-size: 20px;
+  box-sizing: border-box;
+  padding-top: 2.1em;
+  display: inline-block;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.nav a {
+  display: inline-block;
+  text-decoration: none;
+  color:#616161;
+  min-height: 44px;
+  min-width: 44px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  color: #d6d6d6;
+}
+
+/*
+  Juambotron
+*/
+
+.hero {
+  display: flex;
+  align-items: center;
+  min-height: 380px;
+  width: 100%;
+  text-align: center;
+  background-image: url("../public/images/heros/hero-image_4.jpg");
+  background-position:center;
+}
+
+.hero__inner {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.hero__title {
+  color: #eeff00;
+  font-weight: 500;
+  font-size: 36px;
+  font-family: "roboto";
+  font-weight: bold;
+}
+
+.hero__tagline {
+  color: #fff;
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/*
+  main
+*/
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*
+  content
+*/
+
+.content {
+  padding: 32px;
+}
+
+/*
+  Lastest
+*/
+
+.latest {
+  width: 100%;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.latest__label {
+  font-size: 32px;
+  font-weight: lighter;
+}
+
+.latest__label::after {
+  content: '';
+  margin-top: 16px;
+  display: block;
+  border-bottom: 1px solid #eeeeee;
+}
+
+/*
+  post
+*/
+
+.posts {
+  margin: 32px auto auto;
+  text-align: left;
+}
+
+/*
+  post ite,
+*/
+
+.post-item {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.post-item__content {
+  display: block;
+  padding: 16px 32px 32px 32px;
+}
+
+.post-item__thumbnail {
+  width: 100%;
+  height: 50%;
+}
+
+.post-item__city {
+  display: flex;
+  position: absolute;
+  font-weight: 500;
+  font-size: 1.5em;
+  margin: 13px 0px;
+  padding: 10px 24px;
+  color: rgb(224, 224, 224);
+  background-color: #111111;
+  border-radius: 0 5px 5px 0;
+  text-decoration: none;
+}
+
+.post-item__city:hover{
+  background-color: #292929;
+}
+
+.post-item__city a {
+  padding-top: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-item__rate {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #131313;
+}
+
+.post-item__rate__score {
+  color: rgb(14, 14, 14);
+  text-decoration: none;
+}
+
+.post-item__title {
+  font-weight: 1000;
+  font-size: 18px;
+  margin-top: 0;
+  transition: 0.3s opacity;
+}
+
+.post-item__title:hover {
+  opacity: 0.5;
+}
+
+.post-item__title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-item__description {
+  margin-top: 0;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+/*
+  footer
+*/
+
+footer {
+  background-color: #212121;
+  color: #d6d6d6;
+  padding: 2em;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+}
